@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Vowels</title>
+</head>
+
+<body>
+
+    <label for="inputString"><h3>Enter a string: </h3></label>
+    <input type="text" id="inputString" placeholder="Type here...">
+
+    <button onclick="countVowels()">Count Vowels</button><br> <br>
+    <h4 id="result"></h4>
+
+    <script>
+        function countVowels() {
+            // input
+            var inputString = document.getElementById("inputString").value;
+
+            // Convert the string to lowercase
+            inputString = inputString.toLowerCase();
+
+            // Use a regular expression to match vowels and count them
+            const vowelCount = (inputString.match(/[aeiou]/g) || []).length;
+
+            // Display the result
+           // alert("Number of vowels in the string: " + vowelCount);
+             
+            document.getElementById("result").innerHTML = "Number of vowels in the string: " + vowelCount;
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- JavaScript has 8 Datatypes
+1. String: example: "Hello, World!";
+2. Number: example: a = 25;
+3. Bigint: example: BigInt("9007199254740991");
+4. Boolean: example: isTrue = true; isFalse = false;
+5. Undefined: example: undefinedVariable;
+6. Null: example: nullValue = null;
+7. Symbol: example: uniqueSymbol = Symbol("unique");
+8. Object: example: person = { name: "John", age: 30, isStudent: false };
+
+The Object Datatype
+The object data type can contain:
+
+1. An object: example: person = { name: "John", age: 30, isStudent: false };
+2. An array: example: a= ["apple", "banana", "orange"];
+
+3. A date: example: currentDate = new Date();
+
+01// String
+let greeting = 
+
+02// Number
+let age = 25;
+let pi = 3.14;
+
+03// BigInt
+let bigNumber = BigInt("9007199254740991");
+
+
+04// Boolean
+let isTrue = true;
+let isFalse = false;
+
+05// Undefined
+let undefinedVariable;
+
+06// Null
+let nullValue = null;
+
+07// Symbol
+let uniqueSymbol = Symbol("unique");
+
+08// Object
+let person = {
+name: "John",
+age: 30,
+isStudent: false
+};
+
+
+The Object Datatype
+
+1. An object
+
+let person = {
+name: "John",
+age: 30,
+isStudent: false
+};
+
+2. An array
+
+let a= ["apple", "banana", "orange"];
+
+3. A date
+
+let currentDate = new Date(); -->
+
+
